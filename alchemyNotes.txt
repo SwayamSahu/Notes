@@ -32,3 +32,6 @@ Turns out there are other keywords for declaring variables! Using the keyword le
 ==============
 
 A key feature of programming languages is the ability to store some value for later use. We store values in something called a variable. 
+
+What is a function?
+A function is re-usable code! With a function you can plug in different inputs and receive outputs based on the input.
