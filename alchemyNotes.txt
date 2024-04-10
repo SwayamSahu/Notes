@@ -22,6 +22,11 @@ In some languages, compilation creates machine code that is deployed to servers.
 Phew! 
 
 Don't worry if some of that was confusing! It's enough to introduce these concepts for now. We'll dive into further detail in future lessons. We will explore JavaScript syntax one step at a time by writing programs in the coming lessons.
+--------------------------------------------------------------------------------
+
+Constants are immutable, meaning their value cannot change.
+
+Turns out there are other keywords for declaring variables! Using the keyword let instead of const will allow us to make the value mutable.
 
 
 ==============
