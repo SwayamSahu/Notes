@@ -41,13 +41,13 @@ The most common DDL statements are:
 Expand table
 Statement
 Description
-CREATE
+1. CREATE
 Create a new object in the database, such as a table or a view.
-ALTER
+2. ALTER
 Modify the structure of an object. For instance, altering a table to add a new column.
-DROP
+3. DROP
 Remove an object from the database.
-RENAME
+4. RENAME
 Rename an existing object.
  Warning
 
@@ -96,13 +96,13 @@ The four main DML statements are:
 Expand table
 Statement
 Description
-SELECT
+1. SELECT
 Read rows from a table
-INSERT
+2. INSERT
 Insert new rows into a table
-UPDATE
+3. UPDATE
 Modify data in existing rows
-DELETE
+4. DELETE
 Delete existing rows
 The basic form of an INSERT statement will insert one row at a time. By default, the SELECT, UPDATE, and DELETE statements are applied to every row in a table. You usually apply a WHERE clause with these statements to specify criteria; only rows that match these criteria will be selected, updated, or deleted.
 
