@@ -75,11 +75,11 @@ The three main DCL statements are:
 Expand table
 Statement
 Description
-GRANT
+1. GRANT
 Grant permission to perform specific actions
-DENY
+2. DENY
 Deny permission to perform specific actions
-REVOKE
+3. REVOKE
 Remove a previously granted permission
 For example, the following GRANT statement permits a user named user1 to read, insert, and modify data in the Product table.
 
