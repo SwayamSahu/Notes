@@ -99,3 +99,28 @@ console.log( 1 !== 2 ); // true
 console.log( 2 !== 2 ); // false
 console.log( 3 !== 2 ); // true
  Notice that 2 !== 2 is the only expression evaluating to false because these two values are equal.
+
+Factorial
+In mathematics, a factorial is often denoted with an exclamation mark !. A factorial is the product of all positive integers greater than 0 up to and including the factorial number n.
+
+Let's take a look at a few examples of factorials:
+
+5! = 5 * 4 * 3 * 2 * 1 = 120
+
+3! = 3 * 2 * 1 = 6
+
+2! = 2 * 1 = 2
+
+As you can see above, 5!, pronounced "five factorial", is 5 * 4 * 3 * 2 * 1. The number n, in this case 5, is multiplied by every whole number below it greater than 0, resulting in a product of 120.
+
+Q. Taking in some integer value n, find the factorial for that number and return it.
+
+function factorial(n) {
+    product = 1;
+    for(let i=1; i<=n; i++){
+        product = product * i;
+    }
+    return product;
+}
+
+module.exports = factorial;
