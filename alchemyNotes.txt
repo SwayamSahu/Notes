@@ -124,3 +124,34 @@ function factorial(n) {
 }
 
 module.exports = factorial;
+==================================
+
+String Loops
+So far we have used loops to add and multiply to some total integer value.
+
+However, there are many other uses for loops! Let's think about how we can use them for strings. 
+
+Let's add some exclamation marks to "Hello World"!
+
+let str = "Hello World";
+for(let i = 1; i <= 5; i++) {
+    str += "!";
+}
+console.log(str); // Hello World!!!!!
+ Use the + operator to add two or more strings together!
+
+In this case above, we are adding an exclamation mark to our str every iteration. We iterate 5 times so we end up with 5 exclamation marks at the end of "Hello World".
+
+Let's create a function scream which will take in a value n and return a string with the letter "a" repeated that many times. For example:
+scream(5); // "aaaaa"
+scream(10); // "aaaaaaaaaa"
+ You can start with an empty string by assigning "" to a variable. let str = "";
+
+
+function scream(n) {
+    let str = "";
+    for(let i = 0; i < n; i++){
+        str += "a"; 
+    }
+    return str;
+}
