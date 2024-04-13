@@ -58,3 +58,10 @@ Division Operator
 This stage we're going to introduce a new operator, the division operator: /.
 
 The divide operator takes two inputs and divides the left-side by the right-side. So 8 / 4 would evaluate to 2.
+
+
+Math Floor
+Now we're going to discuss another useful Math function Math.floor! Unlike Math.random, Math.floor will take an argument:
+
+const two = Math.floor(2.2598223);
+This function will take 2.2598223 and return 2. The function will round a number down to the nearest integer. For example if we had the number, 2.9999, the function will round this input down to 2.
