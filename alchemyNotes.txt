@@ -65,3 +65,37 @@ Now we're going to discuss another useful Math function Math.floor! Unlike Math.
 
 const two = Math.floor(2.2598223);
 This function will take 2.2598223 and return 2. The function will round a number down to the nearest integer. For example if we had the number, 2.9999, the function will round this input down to 2.
+
+
+CONDITIONALS
+1: Is Equal
+
+If Statement
+Time to introduce the if statement! 
+
+Use if when you need to branch based on a condition:
+
+if(1 === 1) {
+    console.log( "Yup, that's true!" );
+}
+ Here, 1 === 1 is the condition.
+
+The === operator is commonly referred to as the strict equality operator. It compares two values and evaluates to true if they are equal.
+
+The expression 1 === 1 is always true, so this code will always log "Yup, that's true!".
+
+Is Not Equal
+ "Hello? Yes, I'd like an operator!"
+
+Well, you're in luck! 
+
+Our next operator is the !== or the strict inequality operator. This operator will evaluate to true if the two values are not equal.
+
+ There are also loose equality/inequality operators: == and != respectively. We'll discuss these when we dig into types!
+
+Let's check out some examples:
+
+console.log( 1 !== 2 ); // true
+console.log( 2 !== 2 ); // false
+console.log( 3 !== 2 ); // true
+ Notice that 2 !== 2 is the only expression evaluating to false because these two values are equal.
