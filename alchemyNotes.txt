@@ -53,3 +53,8 @@ addNumbers(1, 2);
 The values 1 and 2 would be considered arguments. They are the data supplied to the function, which get filled into the parameters.
 
 This a pretty small distinction, so generally you'll hear these terms used interchangeably! The important thing is to know that when someone says parameter or argument they are referring to the function inputs.
+
+Division Operator
+This stage we're going to introduce a new operator, the division operator: /.
+
+The divide operator takes two inputs and divides the left-side by the right-side. So 8 / 4 would evaluate to 2.
