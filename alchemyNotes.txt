@@ -35,3 +35,21 @@ A key feature of programming languages is the ability to store some value for la
 
 What is a function?
 A function is re-usable code! With a function you can plug in different inputs and receive outputs based on the input.
+
+===============
+
+Parameters and Arguments
+
+Both of the terms parameter and argument refer to the inputs supplied to a function. Let's take a look at a function that has two inputs:
+
+function addNumbers(a, b) {
+    return a + b;
+}
+In this case, there are two inputs. We can also say there are two parameters: a and b. These are the variables that are defined in the function declaration.
+
+If we were to call this function with two values: 1 and 2:
+
+addNumbers(1, 2);
+The values 1 and 2 would be considered arguments. They are the data supplied to the function, which get filled into the parameters.
+
+This a pretty small distinction, so generally you'll hear these terms used interchangeably! The important thing is to know that when someone says parameter or argument they are referring to the function inputs.
