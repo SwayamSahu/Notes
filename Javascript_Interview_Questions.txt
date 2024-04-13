@@ -25,4 +25,9 @@ Arrays
 4. What is negative infinity?
  The negative infinity is a constant value represents the lowest available value. It means that no other number is lesser than this value. It can be generate using a self-made function or by an arithmetic operation. JavaScript shows the NEGATIVE_INFINITY value as -Infinity.
 
-5. 
+5. Is it possible to break JavaScript Code into several lines?
+ Yes, it is possible to break the JavaScript code into several lines in a string statement. It can be broken by using the backslash ‘\’. 
+
+6. What are undeclared and undefined variables?
+Undefined: It occurs when a variable is declare not not assign any value. Undefined is not a keyword.
+Undeclared: It occurs when we try to access any variable which is not initialize or declare earlier using the var or const keyword. If we use ‘typeof’ operator to get the value of an undeclare variable, we will face the runtime error with the return value as “undefined”. The scope of the undeclare variables is always global.
