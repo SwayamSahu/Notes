@@ -446,3 +446,32 @@ jobs:
 tags: {}
 properties: {}
 settings: {}
+
+=============
+
+Introduction
+Completed
+100 XP
+5 minutes
+Foundation models, such as GPT-3, are state-of-the-art natural language processing models designed to understand, generate, and interact with human language. To understand the significance of foundation models, it's essential to explore their origins, which stem from advancements in the fields of artificial intelligence and natural language processing.
+
+Understand artificial intelligence
+Diagram visualizing the relationship between artificial intelligence, machine learning, and deep learning.
+
+The purpose of artificial intelligence (AI) is for computers or machines to perform tasks with human-like intelligence.
+A popular approach nowadays to approach artificial intelligence is through machine learning, a subfield that gives computers the ability to learn without being explicitly programmed.
+The subfield of deep learning uses artificial neural networks to learn and represent complex patterns and hierarchies from data, which are especially useful for data like images and text.
+In other words, machine learning and deep learning techniques can be used to realize AI. There are different types of tasks that you can have computers or machines perform.
+
+Understand natural language processing
+Natural language processing (NLP) is a type of AI that focuses on understanding, interpreting, and generating human language. Some common NLP use cases are:
+
+Diagram visualizing six common use cases for natural language processing tasks.
+
+Speech-to-text and text-to-speech conversion. For example, generate subtitles for videos.
+Machine translation. For example, translate text from English to Japanese.
+Text classification. For example, label an email as spam or not spam.
+Entity extraction. For example, extract keywords or names from a document.
+Question answering. For example, provide answers to questions like "What is the capital of France?"
+Text summarization. For example, generate a short one-paragraph summary from a multi-page document.
+Historically, NLP has been challenging as our language is complex and computers find it hard to understand text. In this module, you learn how developments in AI and specifically NLP have led to the models we use today. You'll explore and use various language models in the model catalog, available in the Azure Machine Learning studio.
