@@ -477,4 +477,4 @@ Text summarization. For example, generate a short one-paragraph summary from a m
 Historically, NLP has been challenging as our language is complex and computers find it hard to understand text. In this module, you learn how developments in AI and specifically NLP have led to the models we use today. You'll explore and use various language models in the model catalog, available in the Azure Machine Learning studio.
 
 
-ai is good
+good
