@@ -74,8 +74,7 @@ Settled: This is the last state of the promise, showing that the promise has bee
 
 A promise constructor uses a callback with two parameters - resolve and reject - to create a promise. The resolve function is called when the asynchronous operation has succeeded. The reject function is called when the asynchronous operation has failed.
 
-7.
-Why are Arrow functions used almost everywhere?
+7. Why are Arrow functions used almost everywhere?
 
 Answer
 Arrow functions are used everywhere because:
@@ -84,28 +83,24 @@ Safety of scope: When the arrow function is used everywhere, it brings consisten
 Compactness: As compared to the standard function, the arrow function is compact as it does away with the need for keywords, curly braces, parenthesis, etc. in certain cases. It is, therefore, easier to read and write.
 Clarity: When the arrow function is used everywhere, there is a certain consistency of scope. Thus, whenever a standard function is mixed with it, it stands out distinctly. The developer can therefore look for the next higher function to locate the thisObject.
 
-9.
-Describe Arrow functions.
+9. Describe Arrow functions.
 
-Hide Answer
+Answer
 The ES6 Javascript version introduced Arrow functions. With the Arrow functions, we can declare functions using new and shorter syntax. These functions can only be used as function expressions. The declaration of these functions is done without using the function keyword. Moreover, if there is a single returning expression, then even the return keyword is not needed. Additionally, wherever the code occurs in a single line only, we can omit the curly {} braces. If there is only one argument in a function, then we can omit even the () parenthesis.
 
-10.
-What are the main differences between Java and JavaScript?
+10. What are the main differences between Java and JavaScript?
 
-Hide Answer
+Answer
 Java is a general-purpose programming language that is class-based, whereas JavaScript is an interpreted scripting language. Java is used to create complete applications that may run on a single computer or be distributed among servers and clients in a network. JavaScript is used to create interactive webpages that may respond to user actions.
 
-11.
-Which company developed JavaScript?
+11. Which company developed JavaScript?
 
-Hide Answer
+Answer
 The language was developed by Brenden Eich in 1995 when he was working as an employee of netscape. He is also the founder of Mozilla foundation.
 
-12.
-What are classes in Javascript?
+12. What are classes in Javascript?
 
-Hide Answer
+Answer
 Classes in Javascript are templates for building objects. Classes bind the data with code so that the data works as per the code. They were introduced in the ES6 version of Javascript and while they were created on prototypes, they also have syntax and semantics that are not common with ES5. Classes can be seen as special functions. There are two components of class syntax: class expressions and class declarations.
 
 Class expressions are one of the ways to define classes. They may or may not have names. If a class expression has a name, it is held locally in the class body but can be accessed through the name property. Before using class expressions, one must declare them.
@@ -113,3 +108,35 @@ Class expressions are one of the ways to define classes. They may or may not hav
 Another way to define classes is class declaration. For declaring a class, the class keyword must be followed by the class name.
 
 One class may use the properties of methods of another class by using the extend keyword. Classes in Javascript must follow the strict mode. If the strict mode is not followed, errors will appear.
+
+
+13. Explain rest parameter and spread operator.
+ Answer
+The ES6 version of Javascript introduced the rest parameter and spread operator.
+
+Rest Parameter
+
+The use of three dots (...) before any parameter shows a rest parameter. This improves the handling of function parameters. With the help of the rest parameter, we can create such functions that can take a different number of arguments. By using the rest parameter, all these arguments will be converted into arrays. The rest parameter can also be used to extract any or all parts of an argument.
+
+Spread Operator
+
+Though the spread operator syntax is the same as that of the rest parameter, the spread operators help to spread arrays and object literals. Another use of spread operators is when one or more arguments are expected to be in a given function call. So, while the rest parameter creates an array, a spread operator spreads an array.
+
+14. How can you create objects in JavaScript?
+
+Answer
+Because JavaScript is fundamentally an object-oriented scripting language, it encourages and supports using objects when developing web-based applications.
+
+Image 23-03-23 at 9.26 PM_11zon.webp
+
+15. How can you make arrays in JavaScript?
+
+Answer
+Here's a simple method to create arrays with JavaScript using the array literal:
+
+Image 23-03-23 at 9.27 PM_11zon-2.webp
+
+16. What is object destructuring?
+
+Answer
+Object destructuring is a JavaScript feature to extract object properties and bind these properties to variables. It can be used to extract several properties in a single statement and can reach properties from nested objects. When no property exists, object destructuring can set default values.
