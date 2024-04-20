@@ -1,3 +1,5 @@
+JavaScript is a lightweight, interpreted, object-oriented scripting language. It allows you to build interactivity into static HTML pages. Netscape, Internet Explorer, and other web browsers include the language's general-purpose core.
+
 1. What are JavaScript Data Types? 
 There are three major Data types in JavaScript.
 
@@ -40,3 +42,11 @@ Undeclared: It occurs when we try to access any variable which is not initialize
 
 9. Explain the working of timers in JavaScript. Also elucidate the drawbacks of using the timer, if any.
 The timer executes some specific code at a specific time or any small amount of code in repetition to do that you need to use the functions setTimout, setInterval, and clearInterval. If the JavaScript code sets the timer to 2 minutes and when the times are up then the page displays an alert message “times up”. The setTimeout() method calls a function or evaluates an expression after a specified number of milliseconds.
+
+====================================================================================
+20-04-2024
+
+The majority of big tech companies utilize JavaScript to build complex and powerful web-based applications. And with the launch of node.js, it has become one of the top languages for building server-side applications. However, the web still needs to be bigger to utilize JavaScript's full potential and flexibility.
+
+Here, we have compiled a list of JavaScript developer interview questions and answers to help you ace your next JavaScript interview and land your desired job. Conversely, if you are an interviewer looking for the best questions to gauge the talented candidate, this can be your reference.
+
