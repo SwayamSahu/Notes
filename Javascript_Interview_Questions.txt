@@ -50,3 +50,26 @@ The majority of big tech companies utilize JavaScript to build complex and power
 
 Here, we have compiled a list of JavaScript developer interview questions and answers to help you ace your next JavaScript interview and land your desired job. Conversely, if you are an interviewer looking for the best questions to gauge the talented candidate, this can be your reference.
 
+4. When should generators be used in ES6?
+
+
+Generators in ES6 can be used in two main scenarios:
+
+When one wants to move out of a function, one can do so using generators, and the outer code determines when to move back into the function.
+
+With the help of generators, one can control an asynchronous call outside the code. Most importantly, though, the next value can come in only when needed; all values do not need to come back at once
+
+5. Why are promises used in JavaScript?
+
+ Answer
+Promises help in managing asynchronous operations, such as server requests in JavaScript. Earlier, callbacks were used for the same purpose. However, callbacks have limited functionality and, thus, can make the code unmanageable. There are four states of the promise object:
+
+Pending: This is the first state of the promise and shows that the promise has been neither fulfilled nor rejected.
+
+Fulfilled: This state represents the completion of the asynchronous operation. In other words, the promise has been fulfilled.
+
+Rejected: This state represents the failure of the asynchronous operation due to some reason. In other words, the promise has been rejected.
+
+Settled: This is the last state of the promise, showing that the promise has been either fulfilled or rejected.
+
+A promise constructor uses a callback with two parameters - resolve and reject - to create a promise. The resolve function is called when the asynchronous operation has succeeded. The reject function is called when the asynchronous operation has failed.
