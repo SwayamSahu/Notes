@@ -450,9 +450,7 @@ settings: {}
 =============
 
 Introduction
-Completed
-100 XP
-5 minutes
+
 Foundation models, such as GPT-3, are state-of-the-art natural language processing models designed to understand, generate, and interact with human language. To understand the significance of foundation models, it's essential to explore their origins, which stem from advancements in the fields of artificial intelligence and natural language processing.
 
 Understand artificial intelligence
