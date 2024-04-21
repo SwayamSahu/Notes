@@ -140,3 +140,93 @@ Image 23-03-23 at 9.27 PM_11zon-2.webp
 
 Answer
 Object destructuring is a JavaScript feature to extract object properties and bind these properties to variables. It can be used to extract several properties in a single statement and can reach properties from nested objects. When no property exists, object destructuring can set default values.
+
+
+17.
+Which is faster, JavaScript or ASP script?
+
+Hide Answer
+JavaScript is faster than ASP script, as it is a lightweight language that is designed to run quickly in the browser. However, ASP script can perform more complex tasks that JavaScript cannot, so it can be faster in certain situations.
+
+18.
+Explain temporal dead zone.
+
+Hide Answer
+Temporal dead zone (TDZ) was introduced for the first time in the ES6 version of JavaScript. TDZ is a behavior that occurs when a variable is accessed before it is initialized. It is a language construct that helps to catch errors as accessing data before initializing it is incorrect. When let and const keywords are used to declare variables a TDZ may occur.
+
+19.
+What is WeakMap in JavaScript?
+
+Hide Answer
+WeakMap object stores key-value pairs with weakly referenced keys. Keys in WeakMap must only be objects, while values can be arbitrary. Primitive data types cannot be keys in WeakMap. Since native WeakMap contains weakly referenced keys, these keys can be garbage collected and therefore references get removed. Also, because of the weak referencing, garbage collection of values in WeakMap is not prevented. When information about a key is valuable ‘only if’ the key is not garbage collected, WeakMap is useful in mapping keys to the information about them.
+
+20.
+What are the rules for naming a variable in JavaScript?
+
+Hide Answer
+The following are the conventions for naming variables in JavaScript:
+
+Variable names should not be identical to the reserved keywords. For example, var, let, const, etc.
+Variable names can't start with a numeric value. They should only begin with the letter or underscore character.
+Variable names have a case-sensitive nature.
+21.
+What is WeakSet in Javascript?
+
+Hide Answer
+WeakSet in Javascript is a collection of unique and orderly objects. Unlike Set, a WeakSet does not contain any other elements. Those objects of a collection that are weakly held, appear in WeakSet. This also means that if there is no reference for a weakly held object, it will be collected as garbage. There are three methods of WeakSet: add(), delete(), and has().
+
+22.
+What is Callback in JavaScript?
+
+Hide Answer
+In JavaScript, the functions are objects that can take different functions as arguments and be returned by other functions. A callback is a JavaScript function passed to another function as an argument, or parameter. This function is executed when the function that it is passed to gets executed.
+
+23.
+How to debug JavaScript code?
+
+Hide Answer
+Modern web browsers, such as Chrome, Firefox, etc., include a built-in debugger that can be opened anytime by pressing the appropriate key, typically the key F12.
+
+24.
+What is Negative Infinity?
+
+Hide Answer
+The negative infinity is a constant value that represents the lowest available value. This means that no number is less than this value. Negative Infinity is calculated by dividing a negative number by zero.
+
+25.
+Which character is used to split JavaScript Code spanning into multiple lines?
+
+Hide Answer
+The backslash, '' character, is used at the end of the first line if the JavaScript code is spread across multiple lines.
+
+26.
+What are the undeclared and undefined variables in JavaScript?
+
+Hide Answer
+Undeclared variables are variables that do not exist in the program and therefore are not declared. If a program attempts to determine the values of an undefined variable, it will fail because of a runtime error.
+
+Undefined variables refer to ones declared by the program but not given a value. If the program attempts to find the values of an undefined variable the variable is returned with an undefined value.
+
+27.
+Explain global variables in JavaScript.
+
+Hide Answer
+A variable declared outside of a function definition is referred to as a global variable, and its scope is across your entire program. This implies that its value is accessible and adjustable throughout your program.
+
+28.
+What does the prompt box mean in JavaScript?
+
+Hide Answer
+It displays an interactive dialog box that displays an optional prompt for users to enter some text. It is typically used when users want to enter a number before entering a webpage. This returns either a string containing the user's input text or a null.
+
+29.
+What is NULL in JavaScript?
+
+Hide Answer
+The NULL value signifies no value or no object. It is also known as an empty value or empty object.
+
+30.
+What is the "this" keyword in JavaScript?
+
+Hide Answer
+"this" refers to an object running the current line of code. It is a reference to the object which executes the current function. If the function that is being referenced is a regular one, "this" references the global object. If the function is a method of the object, "this" refers to the object itself.
