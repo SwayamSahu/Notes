@@ -1,0 +1,96 @@
+ArrayList
+
+In C#, the ArrayList is a non-generic collection of objects whose size increases dynamically. It is the same as Array except that its size increases dynamically.
+
+An ArrayList can be used to add unknown data where we don't know the types and the size of the data.
+
+In C#, the ArrayList class is one of the collections provided by the .NET Framework's System.Collections namespace. It represents a dynamic array that can grow or shrink in size as needed. While ArrayList provides flexibility, it comes with some performance overhead compared to more specialized collections introduced in later versions of .NET.
+
+Here's how we can work with ArrayList:
+
+Importing the Namespace:
+To use ArrayList, you need to include the System.Collections namespace in your code.
+
+using System.Collections;
+
+Creating an ArrayList:
+You can create an ArrayList object and add elements to it using the Add method.
+
+ArrayList arrayList = new ArrayList();
+arrayList.Add("Hello");
+arrayList.Add(123);
+arrayList.Add(3.14);
+
+Accessing Elements:
+You can access elements in an ArrayList using the indexer or the foreach loop.
+
+Console.WriteLine(arrayList[0]); // Output: Hello
+
+foreach (var item in arrayList)
+{
+    Console.WriteLine(item);
+}
+
+Removing Elements:
+You can remove elements using the Remove method.
+
+arrayList.Remove("Hello");
+
+Count and Capacity:
+ArrayList has a Count property that indicates the number of elements it currently holds. It also has a Capacity property that indicates the total number of elements it can hold before resizing is required.
+
+Console.WriteLine(arrayList.Count); // Output: 2
+
+Type Safety:
+Since ArrayList stores elements of type object, it doesn't provide compile-time type safety. You need to ensure that you cast elements appropriately when retrieving them.
+
+Performance Considerations:
+Because ArrayList stores elements of type object, boxing and unboxing operations occur when storing value types, which can impact performance. Additionally, resizing operations can be costly if the collection needs to be resized frequently.
+
+Alternatives:
+If you require type safety and better performance, consider using the generic collections introduced in .NET Framework 2.0, such as List<T>, which provides a strongly-typed alternative to ArrayList.
+
+using System.Collections.Generic;
+
+List<int> list = new List<int>();
+list.Add(123);
+
+While ArrayList can be useful in scenarios where you need a dynamic collection of objects and don't require type safety, it's generally recommended to use generic collections for better performance and type safety.
+
+---------------------------------------------------------------------
+Hashtable
+
+A Hashtable is a collection of key/value pairs that are arranged based on the hash code of the key.
+
+Hashtable is a collection class that stores key/value pairs in a hash table data structure.
+It allows fast retrieval of values based on their associated keys.
+Keys must be unique within the Hashtable, but values can be duplicated.
+Hashtable provides a mechanism for accessing elements in near-constant time complexity.
+However, it does not preserve the order of elements.
+
+Example:
+
+Hashtable hashtable = new Hashtable();
+hashtable.Add("key1", "value1");
+hashtable.Add("key2", "value2");
+
+Console.WriteLine(hashtable["key1"]); // Output: value1
+-------------------------------------------------------------------------------------
+SortedList:
+
+SortedList is a collection class that maintains a sorted collection of key/value pairs.
+It automatically sorts the elements based on the keys.
+Each key must be unique within the SortedList.
+SortedList allows fast retrieval of values based on their associated keys and also supports searching by key.
+Modifications such as insertion and deletion have a logarithmic time complexity due to maintaining the sorted order.
+
+Example:
+
+SortedList sortedList = new SortedList();
+sortedList.Add("key2", "value2");
+sortedList.Add("key1", "value1");
+
+Console.WriteLine(sortedList["key1"]); // Output: value1
+
+
+Both Hashtable and SortedList are useful when you need to associate keys with values and require fast lookup based on keys. However, consider using Dictionary<TKey, TValue> instead of Hashtable for new development, as Dictionary<TKey, TValue> provides type safety and better performance. Similarly, SortedDictionary<TKey, TValue> or SortedSet<T> can be used as alternatives to SortedList depending on the requirements.

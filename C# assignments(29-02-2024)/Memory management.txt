@@ -1,0 +1,27 @@
+.NET Memory Management
+
+Garbage Collector (GC) is the part of the .NET framework that allocates and releases memory for your .NET applications.
+
+When a new process is started, the runtime reserves a region of address space for the process called the managed heap.
+
+Objects are allocated in the heap contiguously one after another.
+
+Memory allocation is a very fast process as it is just the adding of a value to a pointer.
+
+In addition to the managed heap, an app always consumes some amount of so-called unmanaged* memory which is not managed by GC.
+
+1. Memory release﻿
+The process of releasing memory is called garbage collection.
+
+When GC performs a collection, it releases only objects that are no longer in use by the application (for example, a local variable in a method can be accessed only during the method execution and after this, the variable is no longer needed).
+
+
+
+2. Generations﻿
+For better performance of memory release, the managed heap is divided into segments called generations: 0, 1, and 2.
+
+When objects are just created, they are placed to the Generation 0 (Gen 0).
+
+
+3. Large Object Heap﻿
+Due to performance reasons, large objects (larger than 85 KB) are stored in a separate segment of the managed heap called Large Object Heap (LOH).

@@ -1,0 +1,38 @@
+In C#, Stack and Queue are fundamental collection classes provided by the .NET Framework's System.Collections namespace. They represent specialized data structures for storing and manipulating collections of objects in a Last-In-First-Out (LIFO) and First-In-First-Out (FIFO) manner, respectively. 
+
+overview of stack and Queue:
+
+Stack
+
+Stack represents a Last-In-First-Out (LIFO) collection of objects.
+Elements are added to and removed from the top of the stack.
+Common operations include Push to add an item to the top of the stack, Pop to remove and return the top item, and Peek to view the top item without removing it.
+It is commonly used in applications such as expression evaluation, backtracking algorithms, and managing function calls.
+
+Stack<int> stack = new Stack<int>();
+stack.Push(1);
+stack.Push(2);
+stack.Push(3);
+
+int topItem = stack.Pop(); // Removes and returns 3
+int peekedItem = stack.Peek(); // Returns 2 (does not remove it)
+
+
+Queue
+
+Queue represents a First-In-First-Out (FIFO) collection of objects.
+Elements are added to the end of the queue and removed from the beginning.
+Common operations include Enqueue to add an item to the end of the queue, Dequeue to remove and return the first item, and Peek to view the first item without removing it.
+It is commonly used in applications such as task scheduling, breadth-first search algorithms, and message passing systems.
+
+Example:
+
+Queue<string> queue = new Queue<string>();
+queue.Enqueue("First");
+queue.Enqueue("Second");
+queue.Enqueue("Third");
+
+string firstItem = queue.Dequeue(); // Removes and returns "First"
+string peekedItem = queue.Peek(); // Returns "Second" (does not remove it)
+
+Both Stack and Queue provide efficient operations for adding, removing, and inspecting elements, making them suitable for scenarios where you need to manage a collection of objects in a specific order. It's important to choose the appropriate data structure based on the requirements of your application.

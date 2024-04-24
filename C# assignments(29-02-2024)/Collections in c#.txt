@@ -1,0 +1,43 @@
+Collections
+
+In C#, collections are objects that can hold and manipulate groups of related objects. Collections provide various data structures and algorithms to store, retrieve, and manipulate data efficiently. The .NET Framework provides several built-in collection classes in the System.Collections and System.Collections.Generic namespaces. Here's an overview of some commonly used collections in C#:
+
+Arrays:
+Arrays are the most basic form of collection in C#. 
+They can hold a fixed number of elements of the same type.
+Arrays offer constant-time access to elements by index but are not resizable.
+
+List<T>:
+List<T> is a dynamic array implementation introduced in .NET Framework 2.0. 
+It allows you to store elements of a specified type and automatically resizes itself as needed.
+List<T> provides methods for adding, removing, and accessing elements efficiently.
+It offers better performance and type safety compared to ArrayList.
+
+Dictionary<TKey, TValue>:
+Dictionary<TKey, TValue> is a generic collection that stores key-value pairs.
+It provides fast lookup operations based on the key.
+Keys must be unique within the dictionary, but values can be duplicated.
+
+HashSet<T>:
+HashSet<T> is a collection that stores unique elements.
+It provides constant-time operations for adding, removing, and checking for the presence of elements.
+HashSet<T> ensures that no duplicate elements are stored.
+
+Queue<T>:
+Queue<T> represents a first-in, first-out (FIFO) collection of objects.
+Elements are added to the end of the queue and removed from the beginning.
+It is commonly used for implementing algorithms like breadth-first search.
+
+Stack<T>:
+Stack<T> represents a last-in, first-out (LIFO) collection of objects.
+Elements are added and removed from the top of the stack.
+It is useful for implementing algorithms like depth-first search and expression evaluation.
+
+LinkedList<T>:
+LinkedList<T> is a doubly linked list implementation that allows efficient insertion and removal of elements at any position.
+It provides constant-time insertion and removal operations but slower access to elements by index compared to List<T>.
+
+SortedSet<T> and SortedList<TKey, TValue>:
+SortedSet<T> and SortedList<TKey, TValue> are collections that maintain their elements in sorted order.
+SortedSet<T> stores unique elements, whereas SortedList<TKey, TValue> stores key-value pairs with unique keys.
+These are just a few examples of collections available in C#. Depending on your requirements, you can choose the appropriate collection type to efficiently store and manipulate data in your applications.

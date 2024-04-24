@@ -1,0 +1,97 @@
+Value Types and Reference Types
+
+
+All fundamental data types, Boolean, Date, structs, and enums are examples of value types. Examples of reference types include: strings, arrays, objects of classes, etc. To create reference types in C#, you can take advantage of these keywords: class, interface and delegate.
+
+In C#, variables can be categorized into two main types: value types and reference types. Understanding the difference between these two types is crucial for writing efficient and bug-free code.
+
+1. Value Types:
+Value types directly contain their data and are stored in the stack memory.
+Examples of value types include primitive types such as int, float, double, char, bool, and struct types.
+When you assign a value type variable to another variable, a copy of the value is made. Changing one variable does not affect the other.
+Value types have a fixed size known at compile time.
+Value types are generally faster to access and manipulate because they are directly stored in memory.
+
+
+e.g.
+int a = 5;
+int b = a; // b gets a copy of the value of a
+b = 10; // Changing b does not affect a
+Console.WriteLine(a); // Output: 5
+
+2. Reference Types:
+Reference types store references to their data in the heap memory.
+Examples of reference types include classes, interfaces, delegates, and arrays.
+When you assign a reference type variable to another variable, you're copying the reference to the same object. They both refer to the same object in memory.
+Modifying a property or field of the object through one variable will affect the object referenced by the other variable.
+Reference types have a variable size and can grow dynamically.
+
+e.g.
+int[] array1 = { 1, 2, 3 };
+int[] array2 = array1; // array2 points to the same memory location as array1
+array2[0] = 5; // Modifying array2 also modifies array1
+Console.WriteLine(array1[0]); // Output: 5
+
+Boxing and unboxing
+The conversion of a value type to a reference type is known as boxing. Unboxing is just the opposite - it is defined as the process of conversion of a reference type to a value type. The following code snippet illustrates boxing and unboxing in C#.
+
+int i = 100;
+
+Object obj = i; //Boxing
+
+i = (int) obj; //Unboxing
+
+
+Passing by value and passing by reference
+The following code listing illustrates how you can pass a variable to a method by value.
+
+ static void Increment(int i)
+
+        {
+
+            i = i + 1;
+
+        }
+
+        static void Main()
+
+        {
+
+            int x = 1;
+
+            Increment(x);
+
+            Console.WriteLine("The value of x is: " +x);
+
+            Console.Read();
+
+        }
+
+Note that you can pass a value type as a reference to a method by using the ref keyword. The following code listing illustrates this.
+
+static void Increment(ref int i)
+
+        {
+
+            i = i + 1;
+
+        }
+
+        static void Main()
+
+        {
+
+            int x = 1;
+
+            Increment(ref x);
+
+            Console.WriteLine("The value of x is: " +x);
+
+            Console.Read();
+
+        }
+
+When the above code is executed, the message "The value of x is: 2" will be displayed in the console.
+
+Storage locations
+The CLR stores objects in three types of storage locations -- the registers, the stack or the managed heap. While the short-lived objects are stored inside registers or stack, the long-lived objects are stored in the heap. As I mentioned earlier, value types are generally stored in the stack.
