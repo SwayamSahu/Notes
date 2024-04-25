@@ -222,7 +222,7 @@ It displays an interactive dialog box that displays an optional prompt for users
 29.
 What is NULL in JavaScript?
 
-Hide Answer
+ Answer
 The NULL value signifies no value or no object. It is also known as an empty value or empty object.
 
 30.
