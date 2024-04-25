@@ -172,37 +172,37 @@ Variable names have a case-sensitive nature.
 21.
 What is WeakSet in Javascript?
 
-Hide Answer
+Answer
 WeakSet in Javascript is a collection of unique and orderly objects. Unlike Set, a WeakSet does not contain any other elements. Those objects of a collection that are weakly held, appear in WeakSet. This also means that if there is no reference for a weakly held object, it will be collected as garbage. There are three methods of WeakSet: add(), delete(), and has().
 
 22.
 What is Callback in JavaScript?
 
-Hide Answer
+Answer
 In JavaScript, the functions are objects that can take different functions as arguments and be returned by other functions. A callback is a JavaScript function passed to another function as an argument, or parameter. This function is executed when the function that it is passed to gets executed.
 
 23.
 How to debug JavaScript code?
 
-Hide Answer
+Answer
 Modern web browsers, such as Chrome, Firefox, etc., include a built-in debugger that can be opened anytime by pressing the appropriate key, typically the key F12.
 
 24.
 What is Negative Infinity?
 
-Hide Answer
+Answer
 The negative infinity is a constant value that represents the lowest available value. This means that no number is less than this value. Negative Infinity is calculated by dividing a negative number by zero.
 
 25.
 Which character is used to split JavaScript Code spanning into multiple lines?
 
-Hide Answer
+Answer
 The backslash, '' character, is used at the end of the first line if the JavaScript code is spread across multiple lines.
 
 26.
 What are the undeclared and undefined variables in JavaScript?
 
-Hide Answer
+ Answer
 Undeclared variables are variables that do not exist in the program and therefore are not declared. If a program attempts to determine the values of an undefined variable, it will fail because of a runtime error.
 
 Undefined variables refer to ones declared by the program but not given a value. If the program attempts to find the values of an undefined variable the variable is returned with an undefined value.
