@@ -216,7 +216,7 @@ A variable declared outside of a function definition is referred to as a global 
 28.
 What does the prompt box mean in JavaScript?
 
-Hide Answer
+ Answer
 It displays an interactive dialog box that displays an optional prompt for users to enter some text. It is typically used when users want to enter a number before entering a webpage. This returns either a string containing the user's input text or a null.
 
 29.
