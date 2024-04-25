@@ -228,5 +228,5 @@ The NULL value signifies no value or no object. It is also known as an empty val
 30.
 What is the "this" keyword in JavaScript?
 
-Hide Answer
+Answer
 "this" refers to an object running the current line of code. It is a reference to the object which executes the current function. If the function that is being referenced is a regular one, "this" references the global object. If the function is a method of the object, "this" refers to the object itself.
