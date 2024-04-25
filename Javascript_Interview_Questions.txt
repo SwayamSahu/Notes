@@ -145,19 +145,19 @@ Object destructuring is a JavaScript feature to extract object properties and bi
 17.
 Which is faster, JavaScript or ASP script?
 
-Hide Answer
+ Answer
 JavaScript is faster than ASP script, as it is a lightweight language that is designed to run quickly in the browser. However, ASP script can perform more complex tasks that JavaScript cannot, so it can be faster in certain situations.
 
 18.
 Explain temporal dead zone.
 
-Hide Answer
+ Answer
 Temporal dead zone (TDZ) was introduced for the first time in the ES6 version of JavaScript. TDZ is a behavior that occurs when a variable is accessed before it is initialized. It is a language construct that helps to catch errors as accessing data before initializing it is incorrect. When let and const keywords are used to declare variables a TDZ may occur.
 
 19.
 What is WeakMap in JavaScript?
 
-Hide Answer
+Answer
 WeakMap object stores key-value pairs with weakly referenced keys. Keys in WeakMap must only be objects, while values can be arbitrary. Primitive data types cannot be keys in WeakMap. Since native WeakMap contains weakly referenced keys, these keys can be garbage collected and therefore references get removed. Also, because of the weak referencing, garbage collection of values in WeakMap is not prevented. When information about a key is valuable ‘only if’ the key is not garbage collected, WeakMap is useful in mapping keys to the information about them.
 
 20.
