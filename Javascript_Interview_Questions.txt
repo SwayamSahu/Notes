@@ -210,7 +210,7 @@ Undefined variables refer to ones declared by the program but not given a value.
 27.
 Explain global variables in JavaScript.
 
-Hide Answer
+Answer
 A variable declared outside of a function definition is referred to as a global variable, and its scope is across your entire program. This implies that its value is accessible and adjustable throughout your program.
 
 28.
