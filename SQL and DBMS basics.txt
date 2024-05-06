@@ -1,4 +1,4 @@
-explore-relational-data-offeringsoiu
+explore-relational-data-offerings
 
 
 Identify characteristics of relational data
