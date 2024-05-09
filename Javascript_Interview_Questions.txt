@@ -1,6 +1,6 @@
 JavaScript is a lightweight, interpreted, object-oriented scripting language. It allows you to build interactivity into static HTML pages. Netscape, Internet Explorer, and other web browsers include the language's general-purpose core.
 
-1. What are JavaScript Data Types? 
+1. What are JavaScript Data Types? ...........
 There are three major Data types in JavaScript.
 
 Primitive
