@@ -1,6 +1,6 @@
 BitArray
 
-=======
+
 In C#, BitArray is a class provided by the .NET Framework that represents a collection of boolean values as a compact array of bits. It provides efficient storage and manipulation of bits, allowing you to perform bitwise operations on individual bits or entire arrays of bits. 
 
 overview of BitArray:
