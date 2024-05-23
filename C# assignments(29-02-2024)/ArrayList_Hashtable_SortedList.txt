@@ -94,3 +94,6 @@ Console.WriteLine(sortedList["key1"]); // Output: value1
 
 
 Both Hashtable and SortedList are useful when you need to associate keys with values and require fast lookup based on keys. However, consider using Dictionary<TKey, TValue> instead of Hashtable for new development, as Dictionary<TKey, TValue> provides type safety and better performance. Similarly, SortedDictionary<TKey, TValue> or SortedSet<T> can be used as alternatives to SortedList depending on the requirements.
+
+--------------------------------------------------
+
