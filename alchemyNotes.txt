@@ -5,7 +5,7 @@ Programs are written in a programming language designed to be human-readable. In
 
 When a program is ready to be executed by a machine, it is read line-by-line by a compiler or an interpreter. Both of these tools will translate the code into instructions a machine can run.
 
-Parsingkmb
+Parsing
 Each line in a program is parsed to determine its meaning to the machine. This is done by breaking up each statement into tokens. For instance, we might have a statement:
 
 const a = 4
