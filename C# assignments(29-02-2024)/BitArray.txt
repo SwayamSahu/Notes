@@ -10,7 +10,7 @@ Declaration and Initialization:
 You can create a BitArray by specifying its length (number of bits) or by providing an array of bytes or integers.
 
 // Create a BitArray with length 10 (all bits initialized to false)
-BitArray bitArray1 = new BitArray(10);  ................
+BitArray bitArray1 = new BitArray(10);  
 
 // Create a BitArray from an array of bytes
 byte[] bytes = { 0xAA, 0x55 }; // 10101010, 01010101
