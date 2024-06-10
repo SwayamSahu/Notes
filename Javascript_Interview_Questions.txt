@@ -4,6 +4,7 @@ JavaScript is a lightweight, interpreted, object-oriented scripting language. It
 There are three major Data types in JavaScript.
 
 Primitive
+
 Numbers
 Strings
 Boolean
