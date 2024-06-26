@@ -2,7 +2,7 @@ JavaScript is a lightweight, interpreted, object-oriented scripting language. It
 
 1. What are JavaScript Data Types? 
 There are three major Data types in JavaScript.
-..
+
 Primitive
 
 Numbers
