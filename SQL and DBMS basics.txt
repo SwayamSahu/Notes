@@ -1,5 +1,5 @@
 explore-relational-data-offerings
-;
+
 
 Identify characteristics of relational data
 Define normalization
