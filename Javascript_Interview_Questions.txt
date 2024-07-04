@@ -6,7 +6,7 @@ There are three major Data types in JavaScript.
 Primitive
 
 Numbers
-Strings
+Strings......
 Boolean
 Symbol
 
