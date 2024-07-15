@@ -6,7 +6,7 @@ Define normalization
 Identify types of SQL statement
 Identify common relational database objects
 
-
+........
 
 Exploring SQL(Structured Query Language)
 
