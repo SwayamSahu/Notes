@@ -4,7 +4,7 @@ explore-relational-data-offerings
 Identify characteristics of relational data
 Define normalization
 Identify types of SQL statement
-Identify common relational database objects..
+Identify common relational database objects
 
 
 
