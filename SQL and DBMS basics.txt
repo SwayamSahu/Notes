@@ -6,7 +6,7 @@ Define normalization
 Identify types of SQL statement
 Identify common relational database objects
 
-..........
+
 Exploring SQL(Structured Query Language)
 
 SQL stands for Structured Query Language, and is used to communicate with a relational database. It's the standard language for relational database management systems. SQL statements are used to perform tasks such as update data in a database, or retrieve data from a database. Some common relational database management systems that use SQL include Microsoft SQL Server, MySQL, PostgreSQL, MariaDB, and Oracle.
