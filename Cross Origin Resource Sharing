@@ -32,3 +32,39 @@ The article titled "Mastering CORS: The Definitive Guide with Practical Examples
 5. **Common Pitfalls and Debugging**: Addresses common issues developers face with CORS, including misconfigurations and how to troubleshoot them effectively.
 
 The article is designed to help developers grasp the complexities of CORS and apply best practices to manage cross-origin requests securely and efficiently.
+
+
+The article titled "Advanced CORS: Deep Dive into Cross-Origin Resource Sharing" offers a more detailed exploration of CORS beyond the basics. Here’s a summary of its contents and key insights:
+
+### Summary of the Article
+
+1. **Advanced CORS Concepts**:
+   - **Custom Request Headers**: Explains how custom headers in requests require proper CORS configuration. Custom headers trigger preflight checks to ensure they are allowed.
+   - **Complex Requests**: Covers how more complex requests, such as those with methods other than GET or POST, or requests with non-simple content types, involve preflight requests.
+
+2. **Deep Dive into CORS Headers**:
+   - **`Access-Control-Allow-Origin`**: Details the configuration options for specifying which origins can access the resource. It also touches on the use of `*` and dynamic origin settings.
+   - **`Access-Control-Allow-Methods`**: Discusses how to specify the HTTP methods allowed for cross-origin requests.
+   - **`Access-Control-Allow-Headers`**: Provides insights into specifying which headers can be used in the actual request.
+   - **`Access-Control-Expose-Headers`**: Describes how this header specifies which headers are exposed to the client.
+   - **`Access-Control-Allow-Credentials`**: Explains how to enable sending credentials with requests and the implications of setting it to `true`.
+
+3. **Preflight Request Handling**:
+   - **How to Manage Preflight Requests**: Offers strategies for handling preflight requests effectively, including setting appropriate headers on the server and optimizing server responses to avoid unnecessary overhead.
+
+4. **Security Considerations**:
+   - **Securing CORS Configuration**: Emphasizes the importance of careful CORS configuration to avoid security vulnerabilities, such as allowing unintended origins or exposing sensitive information.
+
+5. **Practical Implementations**:
+   - **Code Examples**: Provides practical code snippets and configurations for various server environments and frameworks, helping developers implement advanced CORS setups.
+
+6. **Troubleshooting and Debugging**:
+   - **Common Issues**: Identifies common CORS issues and provides debugging tips to resolve problems with cross-origin requests.
+
+### Key Insights
+
+- **Dynamic Origins**: For security reasons, it's crucial to validate origins dynamically rather than using a wildcard (`*`). This ensures that only trusted domains can access your resources.
+- **Credentials and Security**: When allowing credentials, both the client and server must explicitly enable this, and the server should ensure that credentials are only sent to trusted origins.
+- **Optimizing Preflight Requests**: Reducing the frequency of preflight requests by consolidating headers and methods can improve performance and reduce unnecessary load on the server.
+
+The article provides an in-depth look into advanced aspects of CORS, helping developers understand and implement more complex configurations and handle real-world challenges effectively.
