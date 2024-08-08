@@ -1,0 +1,36 @@
+https://dev.to/dipakahirav/top-10-react-performance-optimization-techniques-ikp
+
+Here are some typical techniques to improve performance in React applications:
+
+1. **Memoization with `React.memo` and `useMemo`**:
+   - Use `React.memo` for functional components to prevent unnecessary re-renders.
+   - Use `useMemo` to memoize expensive calculations.
+
+2. **Callback Optimization with `useCallback`**:
+   - Wrap functions with `useCallback` to prevent re-creation of functions on every render.
+
+3. **Code Splitting**:
+   - Implement dynamic imports and code splitting to load parts of your application only when needed. Libraries like `React.lazy` and `Suspense` are useful for this.
+
+4. **Virtualization**:
+   - Use virtualization libraries like `react-window` or `react-virtualized` to render only the visible items in a long list, improving performance.
+
+5. **Avoiding Inline Functions and Objects**:
+   - Avoid creating functions and objects inside render methods as they can cause unnecessary re-renders of child components.
+
+6. **Efficient Component Design**:
+   - Design components to minimize their re-rendering. Use shouldComponentUpdate or `React.PureComponent` to optimize class components.
+
+7. **Profiling and Performance Monitoring**:
+   - Use React’s built-in Profiler or tools like React DevTools to monitor performance and identify bottlenecks.
+
+8. **Optimizing Context Usage**:
+   - Avoid frequent context updates and use context selectively to prevent performance issues.
+
+9. **Using the Key Prop Wisely**:
+   - Ensure that you provide a unique key prop to elements in lists to help React efficiently update and reorder elements.
+
+10. **Avoiding Expensive Render Logic**:
+    - Keep render methods simple and avoid heavy computations or complex logic during rendering.
+
+If you want to dive deeper into any of these techniques or have specific questions about React performance, feel free to ask!
