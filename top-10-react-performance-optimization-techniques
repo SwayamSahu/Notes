@@ -2,7 +2,7 @@ https://dev.to/dipakahirav/top-10-react-performance-optimization-techniques-ikp
 
 Here are some typical techniques to improve performance in React applications:
 
-1. **Memoization with `React.memo` and `useMemo`**:..
+1. **Memoization with `React.memo` and `useMemo`**:
    - Use `React.memo` for functional components to prevent unnecessary re-renders.
    - Use `useMemo` to memoize expensive calculations.
 
