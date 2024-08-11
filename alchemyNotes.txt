@@ -1,11 +1,11 @@
-What are Programs?  
+# What are Programs?  
 Programs are text files that humans write. They tell computers what to do! Very often the text that we write in programs is referred to as code. People who write programs are referred to as programmers or coders.
 
 Programs are written in a programming language designed to be human-readable. In this way many programmers can work on the same code with a common understanding of what it's trying to accomplish!
 
 When a program is ready to be executed by a machine, it is read line-by-line by a compiler or an interpreter. Both of these tools will translate the code into instructions a machine can run.
 
-Parsing
+## Parsing
 Each line in a program is parsed to determine its meaning to the machine. This is done by breaking up each statement into tokens. For instance, we might have a statement:
 
 const a = 4
@@ -38,7 +38,7 @@ A function is re-usable code! With a function you can plug in different inputs a
 
 ===============
 
-Parameters and Arguments
+# Parameters and Arguments
 
 Both of the terms parameter and argument refer to the inputs supplied to a function. Let's take a look at a function that has two inputs:
 
@@ -235,3 +235,22 @@ ${sender}`;
 Your goal task in this challenge will be to interpolate a randomly generated name into an existing string.
 
 ==============================================
+
+# Classes
+
+Classes are a relatively new feature added to JavaScript in ES2015. Despite being new to the language, classes do not introduce any fundamental changes to the language. They simply create a new interface for using prototypes.
+
+// an example of a Person class
+class Person {
+    constructor() {
+        this.name = "Benjamin Button";
+        this.age = 40;
+    }
+    haveBirthday() {
+        // Benjamin Button was a curious case...
+        this.age--;
+    }
+}
+Classes are gaining popularity in JavaScript since their introduction. For example, the popular front-end framework React instructs using classes when creating components.
+
+Let's create Hero and Warrior classes to learn our way around this feature!
