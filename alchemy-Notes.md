@@ -235,7 +235,6 @@ ${sender}`;
 Your goal task in this challenge will be to interpolate a randomly generated name into an existing string.
 
 ==============================================
-
 # Classes
 
 Classes are a relatively new feature added to JavaScript in ES2015. Despite being new to the language, classes do not introduce any fundamental changes to the language. They simply create a new interface for using prototypes.
