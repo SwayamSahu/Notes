@@ -475,4 +475,27 @@ Text summarization. For example, generate a short one-paragraph summary from a m
 Historically, NLP has been challenging as our language is complex and computers find it hard to understand text. In this module, you learn how developments in AI and specifically NLP have led to the models we use today. You'll explore and use various language models in the model catalog, available in the Azure Machine Learning studio.
 
 ===========================================================
+Array Map
+One of the important methods on the Array prototype is map. Map allows you take each element of an array and apply a function to it, returning the result after the function.
 
+Let's say we had a function that adds one to an element:
+
+addOne
+
+Simple enough function. We take a number, add one to it and return it. Input 3, output 4.
+
+What if we wanted to apply this function to several elements? We can do so using map!
+
+map
+
+Now we take our addOne function and we map it over each element. Every element will go through the function and return the resulting element. Input 3, output 4. Input 4, output 5 etc...
+
+Or in code:
+
+const arr = [3,4,5];
+
+const newArr = arr.map(function(x) {
+    return x + 1;
+});
+
+console.log( newArr ); // [4,5,6]
