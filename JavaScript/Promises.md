@@ -130,3 +130,6 @@ Citations:
 [6] https://www.freecodecamp.org/news/javascript-promises-explained/
 [7] https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using_promises
 [8] https://blog.greenroots.info/javascript-promises-explain-like-i-am-five
+
+
+https://www.perplexity.ai/search/explain-promises-in-javascript-H7X7XpjjS3eZ3XMCBlEe_A#0
