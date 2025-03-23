@@ -61,3 +61,70 @@ Here's a summary of message queues based on the pizza shop analogy, in five poin
 **Gaurav Sen's YouTube video explains message queues using a pizza shop analogy.** It illustrates how they asynchronously handle orders, allowing customers to not wait for immediate confirmation or the finished product. **The video further explains how message queues provide persistence and reliability, especially in distributed systems with multiple servers.** When a server fails, the message queue can reassign tasks to other available servers, preventing data loss and ensuring order completion. **The concept encapsulates features like load balancing and failure detection to manage tasks efficiently.** Ultimately, the video presents message queues as a crucial system design pattern for managing complexity and ensuring reliable processing in various applications.
 ==
 A **message queue (or task queue)**, as illustrated by the pizza shop analogy, is a fundamental system design concept that encapsulates persistence, asynchronous task processing, reliable task assignment (including load balancing and failure handling), and notification mechanisms to manage complexity and improve efficiency in handling tasks across multiple servers [13, 14, Previous Conversation History].
+
+
+===
+### **SQL Injection**  
+SQL Injection is a **security vulnerability** where an attacker manipulates SQL queries by injecting malicious SQL code into input fields, potentially gaining **unauthorized access, modifying, or deleting data** in the database.  
+
+### **Why Prevent SQL Injection?**  
+🔴 **Data Breach** – Attackers can steal sensitive information.  
+🔴 **Data Manipulation** – Unauthorized modification or deletion of records.  
+🔴 **Privilege Escalation** – Attackers may gain admin-level access.  
+
+### **How to Prevent SQL Injection?**  
+✅ **Use Parameterized Queries (Best Practice)**  
+```csharp
+using (SqlCommand cmd = new SqlCommand("SELECT * FROM Users WHERE Username = @username AND Password = @password", conn))
+{
+    cmd.Parameters.AddWithValue("@username", userInput);
+    cmd.Parameters.AddWithValue("@password", passwordInput);
+}
+```
+✅ **Use Stored Procedures**  
+```sql
+CREATE PROCEDURE GetUser(@username NVARCHAR(50))
+AS
+BEGIN
+    SELECT * FROM Users WHERE Username = @username
+END
+```
+✅ **Use ORM Frameworks** (e.g., Entity Framework, Hibernate)  
+✅ **Validate & Sanitize Input** – Restrict special characters.  
+✅ **Use Least Privilege Principle** – Avoid using **DB admin accounts** for API connections.  
+
+Would you like a real-world attack example? 🚀
+
+==
+### **How Parameterized Queries Prevent SQL Injection**  
+**SQL Injection** happens when user input is directly concatenated into SQL queries, allowing attackers to manipulate queries. **Parameterized Queries** prevent this by **treating user input as data** rather than part of the SQL command.  
+
+### **Example: Without Parameterized Query (Vulnerable to SQL Injection)**  
+```csharp
+string query = "SELECT * FROM Users WHERE Username = '" + userInput + "' AND Password = '" + passwordInput + "'";
+SqlCommand cmd = new SqlCommand(query, conn);
+```
+**❌ Risk:** If `userInput` is set as `admin' --`, the query becomes:  
+```sql
+SELECT * FROM Users WHERE Username = 'admin' --' AND Password = ''
+```
+👉 The `--` makes the rest of the query a comment, **bypassing authentication**.
+
+---
+
+### **Example: With Parameterized Query (Safe)**
+```csharp
+string query = "SELECT * FROM Users WHERE Username = @username AND Password = @password";
+using (SqlCommand cmd = new SqlCommand(query, conn))
+{
+    cmd.Parameters.AddWithValue("@username", userInput);
+    cmd.Parameters.AddWithValue("@password", passwordInput);
+}
+```
+**✅ Why is this safe?**  
+- **User input is treated as a value**, not part of the SQL command.  
+- **Database automatically escapes special characters**, preventing injection.  
+- **Ensures correct data types**, reducing attack vectors.  
+
+### **Conclusion**  
+**Always use Parameterized Queries** to avoid security vulnerabilities like SQL Injection. 🚀
