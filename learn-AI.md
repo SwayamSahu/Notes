@@ -1,5 +1,3 @@
-I've built 90+ AI AGENTS in the last 12 months
-
 These 10 GitHub Repos taught me everything about AI Agents
 
 1. Hands-On Large Language Models
