@@ -57,3 +57,7 @@ Sunday (3 hrs)
 - Multimodal AI: speech, images, vision, video
 - Whisper, DALL-E, OpenAI Vision
 - Final Project: Agent or Multimodal RAG app
+
+
+====
+
