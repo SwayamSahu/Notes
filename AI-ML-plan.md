@@ -504,3 +504,159 @@ End with a high-level system diagram.
 
 ---
 
+topics to be covered week-wise (Complete AI Engineer Bootcamp)
+
+week-1 
+python
+
+week-2
+python
+
+week-3
+python
+RAG Basics + PoC
+
+week-4
+
+Natural vs Artificial Intelligence
+Brief history of AI
+Demystifying AI, Data science, Machine learning, and Deep learning
+Structured vs unstructured data
+How we collect data
+Labelled and unlabelled data
+
+week-5
+
+Key 
+Machine learning
+Supervised, Unsupervised, and Reinforcement learning
+Deep learning
+
+📅 WEEK 1 — Foundations for ML (Beginner Level)
+
+📘 Day 1 — Intro to ML & the Workflow
+What is ML? Types of ML (Supervised, Unsupervised).
+ML workflow: data → preprocessing → model → training → evaluation → deployment.
+Understanding basic terms: features, labels, training vs testing.
+Mini-Task: Write down 10 real-world ML use cases.
+
+📘 Day 2 — Python Basics for ML
+Python fundamentals: variables, lists, dictionaries, functions, loops.
+Importing libraries (numpy, pandas).
+Using Jupyter Notebook.
+
+📘 Day 3 — NumPy for Scientific Computing
+Arrays, vectorization, slicing, matrix operations.
+Why NumPy is used in ML.
+
+📘 Day 4 — Pandas for Data Handling
+DataFrames, importing CSVs, filtering, handling missing values.
+Summary statistics, groupby, sorting.
+
+📘 Day 5 — Data Visualization (matplotlib/seaborn)
+Bar charts, histograms, scatterplots.
+Understand dataset distribution and patterns.
+
+📘 Day 6 — ML Basics with scikit-learn
+What is a model?
+Train/test split
+Fit → Predict → Evaluate
+First algorithms:
+
+Linear Regression
+Logistic Regression
+KNN Classifier
+
+📘 Day 7 — End of Week Project (Mini)
+Build Your First ML Model (Super Easy Project)
+
+Dataset: Iris, Titanic, or any Kaggle beginner dataset
+Steps:
+✔ Load dataset
+✔ Clean data
+✔ Train 1–2 basic ML models
+✔ Evaluate accuracy
+✔ Plot predictions
+
+📅 WEEK 2 — Practical ML, Deep Learning Basics & Deployment Intro
+
+📘 Day 8 — Understanding Model Performance
+Metrics: accuracy, precision, recall, F1
+Confusion matrix
+Overfitting vs underfitting
+Cross-validation (basic intuition)
+
+📘 Day 9 — Feature Engineering (Super Beginner)
+Encoding categorical variables
+Normalization & scaling
+Feature selection basics
+
+📘 Day 10 — Intro to Deep Learning (High-Level Only)
+What is a neural network?
+Intro to PyTorch OR TensorFlow/Keras.
+Build a 2-layer neural network for digit classification (MNIST).
+
+📘 Day 11 — Real-World ML Workflow
+Pipeline building (scikit-learn Pipeline)
+Saving models with joblib/pickle
+Re-training & versioning overview
+
+📘 Day 12 — Deployment Basics
+What is model deployment?
+Intro to FastAPI/Flask
+Serving predictions using a simple REST API
+Understanding Docker (very high-level)
+
+Important AI branches
+
+Robotics
+Computer vision
+Traditional ML
+Generative AI
+
+week-6
+
+Understanding Generative AI
+
+The rise of Gen AI: Introducing ChatGPT
+Early approaches to Natural Language Processing (NLP)
+Recent NLP advancements
+From Language Models to Large Language Models (LLMs)
+The efficiency of LLM training. Supervised vs Semi-supervised learning
+From N-Grams to RNNs to Transformers: The Evolution of NLP
+Phases in building LLMs
+Prompt engineering vs Fine-tuning vs RAG: Techniques for AI optimization
+The importance of foundation models
+Buy vs Make: foundation models vs private models
+
+Practical challenges in Gen AI
+
+Inconsistency and hallucination
+Budgeting and API costs
+Latency
+Running out of data
+
+week-7
+
+The AI tech stack
+
+python programming 
+working with APIs
+Vector databases
+The importance of open source
+Hugging Face
+LangChain
+AI evaluation tools
+
+AI job positions
+
+AI engineer
+AI stratigist
+
+Looking Ahead
+
+AI ethics
+Future of AI
+
+
+week-8
