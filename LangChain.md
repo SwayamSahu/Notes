@@ -1,6 +1,6 @@
 This script is designed to guide students from foundational knowledge of LangChain to implementing advanced techniques and deployment strategies, drawing comprehensively from the provided sources.
 
----
+---------
 
 ## **LangChain Mastery: From Beginner to AI Engineer**
 
