@@ -949,3 +949,65 @@ email_assistant = overall_workflow.compile()
 # overall_workflow.add_edge("mark_as_read_node", END)
 
 # email_assistant = overall_workflow.compile()
+
+
+
+
+====
+
+Summary of All Fixes Implemented
+I've successfully fixed all the issues to enable Outlook email ingestion with human-in-the-loop functionality. Here's what was done:
+
+1. ✅ Registered Outlook Graph in LangGraph
+File: langgraph.json
+Change: Added email_assistant_hitl_memory_outlook to the registered graphs
+Impact: LangGraph server now recognizes and can run the Outlook graph
+2. ✅ Added Outlook Tool Support to Base Functions
+File: base.py
+Changes:
+Updated get_tools() function signature to include include_outlook parameter
+Added logic to import and register Outlook tools when include_outlook=True
+Gracefully handles ImportError if Outlook tools unavailable
+Impact: Outlook-based agents can now load Outlook tools
+3. ✅ Fixed Outlook Tools Import
+File: __init__.py
+Change: Corrected import from mark_as_read_tool to mark_as_read
+Impact: Eliminates "cannot import" errors on startup
+4. ✅ Fixed Datetime Format for Microsoft Graph API
+File: run_ingest.py
+Changes:
+Changed from .isoformat() to .strftime('%Y-%m-%dT%H:%M:%SZ')
+Removed problematic microseconds
+Impact: Outlook API now accepts the datetime filter correctly
+5. ✅ Implemented Dual Email Queries (FROM and TO)
+File: run_ingest.py
+Changes:
+Implemented two separate API queries for FROM and TO addresses
+Added email deduplication
+Graceful error handling for complex OData filters
+Impact: Emails are now fetched from both directions
+6. ✅ Fixed Token Refresh Scope Issue
+File: run_ingest.py
+Change: Removed offline_access from acquire_token_by_refresh_token() scopes
+Impact: Token refresh now works without scope validation errors
+7. ✅ Added Missing Utility Functions
+File: utils.py
+Changes:
+Added parse_outlook() function to parse Outlook email data
+Added format_outlook_markdown() function to format Outlook emails for display
+Impact: Outlook agent can now parse and format emails correctly
+Result
+The system is now fully operational with:
+
+✅ LangGraph server running with 3 registered graphs (Gmail, Outlook, Cron)
+✅ Outlook email ingestion working correctly
+✅ Human-in-the-loop functionality ready to trigger
+✅ Token refresh and authentication working
+✅ Email fetching from Outlook mailbox successful
+The system can now:
+
+Fetch emails from Outlook using Microsoft Graph API
+Ingest them into LangGraph for processing
+Trigger human-in-the-loop interrupts for user review
+Mark emails as read after processing
+Handle token refresh automatically
