@@ -1,6 +1,6 @@
 WEEK 1 — Foundations of AI Engineering
 Saturday (3 hrs)
-- What is an AI Engineer?
+- What is an AI Engineer
 - AI Engineer vs ML Engineer
 - Roles & responsibilities
 - Key terminology: AI vs AGI, LLMs, Embeddings, Vector DBs, RAG, Agents
